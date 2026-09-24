@@ -1,0 +1,27 @@
+Atividade 9
+#include <stdio.h>
+
+int main() {
+    int nota1, nota2, nota3, nota4, nota5;
+    int quantidademaiores = 0;
+
+    printf("Digite as cinco notas: ");
+    scanf("%d %d %d %d %d", &nota1, &nota2, &nota3, &nota4, &nota5);
+    if (nota1 <= 6) {
+        quantidademaiores++;
+    }
+    if (nota2 <= 6) {
+        quantidademaiores++;
+    }
+    if (nota3 <= 6) {
+        quantidademaiores++;
+    }
+    if (nota4 <= 6) {
+        quantidademaiores++;
+    }
+    if (nota5 <= 6) {
+        quantidademaiores++;
+    }
+    printf("Quantidade de notas menores ou iguais a 6: %d\n", quantidademaiores);
+    return 0;
+}
