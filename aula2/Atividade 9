@@ -1,0 +1,24 @@
+// atividade 9
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Quantos termos da sequencia de Fibonacci voce quer ver? ");
+    scanf("%d", &n);
+
+    int t1 = 0,t2 = 1, proximo;
+
+    printf("sequencia de Fibonacci:\n");
+    for (int i = 1; i <= n; i ++){
+        printf("%d ", t1);
+        proximo = t1 + t2;
+        t1 = t2;
+        t2 = proximo;
+    }
+
+    printf("\n"); 
+
+
+    return 0;
+
+}
