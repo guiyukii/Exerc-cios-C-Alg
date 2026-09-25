@@ -1,0 +1,23 @@
+#include <stdio.h>
+    int main() {
+        int num1, num2,num3, sum;
+        printf("Insira os valores dos 3 lados do triangulo: ");
+        scanf("%d %d %d", &num1, &num2, &num3);
+
+        if (num1 <= 0 || num2 <= 0 || num3 <= 0 ||
+            num1 + num2 <= num3 || num1 + num3 <= num2 || num2 + num3 <= num1) {
+            printf("Esses valores nao formam um triangulo valido.\n");
+        }
+        else if (num1 == num2 && num2 == num3) {
+            printf("Esse e um triangulo equilatero.\n");
+        }
+        else if ((num1 == num2 && num1 != num3) ||
+                 (num1 == num3 && num1 != num2) ||
+                 (num2 == num3 && num2 != num1)) {
+            printf("Esse e um triangulo isosceles.\n");
+        }
+        else {
+            printf("Esse e um triangulo escaleno.\n");
+        }
+
+    }
