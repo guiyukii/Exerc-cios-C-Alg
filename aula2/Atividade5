@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int num1, continuar = 1;
+
+    while (continuar == 1) {
+        printf("Deseja visualizar a tabuada de qual numero? ");
+        scanf("%d", &num1);
+
+        for (int multiplicador = 1; multiplicador <= 10; multiplicador++) {
+            printf("%d x %d = %d\n", num1, multiplicador,
+                   num1 * multiplicador);
+        }
+
+        printf("Deseja ver outra tabuada? (1-Sim / 0-Nao): ");
+        scanf("%d", &continuar);
+    }
+
+    return 0;
+}
