@@ -1,0 +1,38 @@
+#include <stdio.h>
+/*Atividade 2*/
+int main() {
+    int vezesdigitar;
+    int numero; 
+    int soma = 0;
+    int maior;
+    int menor;
+    float media;
+    
+    printf("Digite a quantidade de números que voce vai querer: ");
+        scanf("%d", &vezesdigitar);
+    if (vezesdigitar == 0 ) {
+        printf("Valor invalido") ;
+    }
+    for (int i = 1; i <= vezesdigitar; i++){
+        printf("Digite o número %d: " , i);
+            scanf("%d", &numero);
+        soma = soma + numero;
+        
+         if (i == 1) {
+            maior = numero;
+            menor = numero;
+        }
+
+        if (numero > maior) {
+            maior = numero;
+        }
+
+        if (numero < menor) {
+            menor = numero;
+        }
+    }
+    media = soma / (float) vezesdigitar;
+    printf("\nO Maior numero é %d", maior);
+    printf("\nO Menor numero é %d", menor);
+    printf("\nA Media é: %2.f", media);
+}
