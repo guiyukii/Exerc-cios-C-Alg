@@ -1,0 +1,21 @@
+// atividade 10
+#include <stdio.h>
+int main() {
+    int numero;
+    int tentativas = 0;
+
+    while (numero < 1 || numero > 100){
+        printf("Digite um número de 1 a 100; ");
+        scanf("%d", &numero);
+        tentativas++;
+
+        if (numero < 1 || numero > 100) {
+            printf("Número invalido, tente novamente...");
+        }
+    }
+    printf("Número válido!! foram necessárias %d tentativa(s).\n", tentativas);
+    
+    return 0;
+
+    
+}
