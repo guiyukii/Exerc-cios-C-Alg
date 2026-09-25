@@ -1,0 +1,21 @@
+#include <stdio.h>
+/*Atividade 1*/
+int main() {
+    int numero1;
+    int numero2;
+    int numero3;
+    float media;
+    
+    printf("Digite os trê números: ");
+        scanf("%d %d %d", &numero1, &numero2, &numero3);
+        if (numero1 == 0 || numero2 == 0 || numero3 == 0) {
+            printf("Valor invalido, tente novamente");
+        }
+    media = (numero1 + numero2 + numero3) / 3;
+    printf("A média é: %2.f ", media);
+        if (media >= 6) {
+            printf("Voce foi aprovado");
+        } else {
+            printf("Voce foi reprovado");
+        }
+}
